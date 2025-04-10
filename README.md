@@ -1,5 +1,8 @@
 # Combinatorial-Algorithms-Assignment-1
-牛通算我要拉屎
-我要放屁
-我要尿尿
-李开复记录卡就发了科技阿卡拉飞机阿拉开发机发啦卡机发了法兰克福就放假了卡飞机打撒考拉
+
+ISSUES TO BE FIXED:
+
+1. Assignment 1, the first question, issue 1:
+   The name of the file ought to be changed to comb_alg_ass1_1.py
+3. Assignment 1, the first question, issue 2:
+   Check if "continue" is allowed to be use!
