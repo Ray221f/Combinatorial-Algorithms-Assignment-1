@@ -7,7 +7,9 @@ ISSUES TO BE FIXED:
 3. Assignment 1, Exercise 1, issue 2:
    Check if "continue" is allowed to be use!
 
+
 CA_notes:
+
 This is the notes file made by Ray221f for reviewing, not aim at uploading on M**dle
 
 
