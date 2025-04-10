@@ -1,5 +1,10 @@
 # Combinatorial-Algorithms-Assignment-1
 
+GENEREAL REMARK:
+
+The file ds_comb_alg_ass1_1.py was correctlty tested by the examples given in the assignment.
+
+
 ISSUES TO BE FIXED:
 
 1. Assignment 1, Exercise 1, issue 1:
