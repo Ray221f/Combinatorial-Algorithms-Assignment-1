@@ -8,7 +8,7 @@ if n < 4:
     print("No paws found in the graph")
     exit()
 
-# Build adjacency sets
+# Build adjacency sets, for counting the edges in the subsets below
 adj = [set() for _ in range(n)]
 for _ in range(m):
     u, v = map(int, input().split())
