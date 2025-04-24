@@ -1,4 +1,4 @@
-from collections import deque
+#from collections import deque
 
 def topological_sort(n, adj, in_degree):
     """Perform topological sort and return the valid ordering if possible"""
@@ -10,6 +10,7 @@ def topological_sort(n, adj, in_degree):
         if in_degree[i] == 0:
             queue.append(i)
     
+    #Pop the left node in the queue，append it in the result
     while queue:
         node = queue.popleft()
         result.append(node)
@@ -26,6 +27,7 @@ def topological_sort(n, adj, in_degree):
     else:
         return None  # Cycle detected, so no valid topological ordering
 
+# This snippet is from the class.
 def trotter_johnson_rank_recursive(perm):
     """
     Calculates the rank of perm for numbers {1,..,len(perm)} for the Trotter-Johnson order recursively
@@ -49,7 +51,7 @@ def trotter_johnson_rank_recursive(perm):
 
 def main():
     n, m = map(int, input().split())
-    adj = [[] for _ in range(n + 1)]
+    adj = [[] for _ in range(n + 1)]    # Modify-1!
     precedence_pairs = []
 
     # Reading precedence pairs
@@ -58,7 +60,7 @@ def main():
         precedence_pairs.append((a, b))
 
     # Step 1: Build the graph and compute the in-degree of each node
-    in_degree = [0] * (n + 1)
+    in_degree = [0] * (n + 1)    # Initialize the in_degree array
     for a, b in precedence_pairs:
         adj[a].append(b)
         in_degree[b] += 1
@@ -72,6 +74,3 @@ def main():
         # Step 3: Calculate the rank of the valid permutation in Trotter-Johnson ordering
         rank = trotter_johnson_rank_recursive(valid_ordering)
         print(rank)
-
-if __name__ == "__main__":
-    main()
